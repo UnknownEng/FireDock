@@ -1,0 +1,19 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.nbi
+*.nbc
+
+# Build and tool folders
+.pio/
+tools/
+.claim_*
+
+# Local-only material (not part of the public repository)
+reports/
+research_notes/
+paper/
+Docker_Drone_Final/
+Docker_Drone_Final.zip
+RushDuck_*

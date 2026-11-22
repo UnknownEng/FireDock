@@ -1,0 +1,62 @@
+# ArduCopter 4.5+ starting parameters for the Docker Drone (Matek H743-SLIM V4, 6S, 7-inch, dock).
+# Load in Mission Planner: Config > Full Parameter List > Load from file. Then do all calibrations
+# (accelerometer, compass, radio, ESC/motor test) as usual.
+# CHECK the SERIALx numbers against the Matek H743 wiring diagram for the pads you actually used.
+#
+# --- frame + motors: quad X, DShot600, bidirectional DShot (RPM) from the AM32 ESC
+FRAME_CLASS,1
+FRAME_TYPE,1
+MOT_PWM_TYPE,6
+SERVO_BLH_AUTO,1
+SERVO_BLH_BDMASK,15
+SERVO_BLH_POLES,14
+MOT_BAT_VOLT_MAX,25.2
+MOT_BAT_VOLT_MIN,19.8
+# --- RPM harmonic notch (the arm's first bending mode is ~95-110 Hz, inside the motor speed range)
+INS_HNTCH_ENABLE,1
+INS_HNTCH_MODE,3
+INS_HNTCH_REF,1
+INS_HNTCH_FREQ,60
+INS_HNTCH_BW,30
+INS_HNTCH_HMNCS,3
+INS_HNTCH_OPTS,6
+# --- battery 6S 3000 mAh
+BATT_MONITOR,4
+BATT_CAPACITY,3000
+BATT_LOW_VOLT,21.0
+BATT_CRT_VOLT,19.8
+BATT_FS_LOW_ACT,2
+BATT_FS_CRT_ACT,1
+# --- radio links: ELRS (CRSF) receiver, mLRS LoRa MAVLink telemetry, Pi 5 companion
+SERIAL6_PROTOCOL,23
+RSSI_TYPE,3
+SERIAL1_PROTOCOL,2
+SERIAL1_BAUD,115
+SERIAL2_PROTOCOL,2
+SERIAL2_BAUD,921
+# --- GPS + compass (M10Q-5883)
+SERIAL3_PROTOCOL,5
+GPS1_TYPE,1
+COMPASS_ENABLE,1
+COMPASS_AUTODEC,1
+# --- precision landing on the dock marker (companion sends LANDING_TARGET)
+PLND_ENABLED,1
+PLND_TYPE,1
+PLND_EST_TYPE,1
+PLND_ORIENT,25
+PLND_STRICT,1
+PLND_RET_MAX,4
+PLND_TIMEOUT,4
+PLND_XY_DIST_MAX,2.5
+PLND_ALT_MIN,0.35
+PLND_ALT_MAX,15
+# --- return / land: slow final descent onto the deck, land at the dock (home)
+RTL_ALT,2500
+RTL_LOIT_TIME,4000
+LAND_SPEED,30
+LAND_SPEED_HIGH,150
+LAND_ALT_LOW,800
+# --- failsafes: lost RC or lost GCS link -> RTL to the dock
+FS_THR_ENABLE,1
+FS_GCS_ENABLE,1
+FS_OPTIONS,0

@@ -1,0 +1,177 @@
+{
+  "AUW_breakdown_g": {
+    "frame + legs + mounts (from CAD)": 338.2,
+    "battery: GNB 6S 3000 mAh 100C LiPo, 138x44x32 mm, XT60 (crosswise under the tray)": 418,
+    "esc: NewBeeDrone Hummingbird 305 80A 3-8S AM32 4in1 ESC, 43x43 mm, 30.5x30.5 (14.5 g bare + cap/leads)": 18,
+    "fc: Matek H743-SLIM V4 flight controller (ArduPilot/INAV), 36x36x5 mm, 30.5x30.5": 7,
+    "vtx: RushFPV Tank Ultimate Mini 800 mW analog VTX, 28x28 mm, 20x20 M2": 5.4,
+    "elrs_rx: RadioMaster RP3 V2 ELRS 2.4 GHz diversity receiver, 22x13x4 mm, incl. 2 antennas": 4.6,
+    "fpv_cam: Caddx Ratel 2 (19 mm micro) analog FPV camera": 6,
+    "down_cam: Raspberry Pi Camera Module 3, 25x24 mm, facing down (precision landing)": 4,
+    "rpi: Raspberry Pi 5 + official active cooler": 66,
+    "bec: 5 V 5 A BEC for the Pi (under the Pi)": 6,
+    "gps: Matek M10Q-5883 GPS (u-blox M10) + QMC5883L compass, 20x20x12.4 mm": 8,
+    "telemetry: Matek mR900-30 mLRS LoRa MAVLink telemetry, 900 MHz 1 W, ~29x21 mm + heatsink": 5.3,
+    "ant_telemetry: 900 MHz dipole, 8 cm (weight included with the radio)": 0,
+    "ant_vtx: 5.8 GHz VTX antenna (down-back)": 8,
+    "ant_elrs_L: ELRS T-antenna (weight included with RP3)": 0,
+    "ant_elrs_R: ELRS T-antenna (weight included with RP3)": 0,
+    "charge_bridge: Ideal-diode bridge (LT4320 + 4 MOSFETs, 5 A) + 5 A fuse, in the printed case": 8,
+    "bms: 6S 20 A BMS with cell balancing, on the battery's balance lead (taped under the pack)": 15,
+    "motors_4x: iFlight XING2 2809 1250KV, 19x19 M3, 60.7 g each": 242.8,
+    "props_4x: 7 inch tri-blade (e.g. HQProp 7x4x3 / Gemfan 7040-3)": 44,
+    "contacts_4x: M4 stainless acorn nuts + M4 screws (foot contacts)": 12.0,
+    "wiring_hardware: screws, XT60, wires, charging leads, straps, ribbon": 65
+  },
+  "results": {
+    "LC1_full_thrust": {
+      "load_N": 25.5,
+      "max_stress_MPa": 4.9,
+      "stress_at_foot_hole_MPa": 2.7,
+      "tip_deflection_mm": 0.621,
+      "safety_factor": 7.1
+    },
+    "LC2_motor_torque": {
+      "torque_Nmm": 400.0,
+      "shear_stress_MPa": 0.72,
+      "safety_factor": 24.0
+    },
+    "LC3_vertical_crash_one_arm": {
+      "tip_force_to_reach_allowable_N": 181.0,
+      "equivalent_g_whole_drone": 14.4
+    },
+    "LC4_side_hit_one_arm": {
+      "tip_force_to_reach_allowable_N": 219.0,
+      "equivalent_g_whole_drone": 17.4
+    },
+    "comparison_vs_carbon_arm": {
+      "carbon_6mm_allowable_force_N": 428.0,
+      "this_arm_allowable_force_N": 181.0,
+      "this_arm_ultimate_force_N": 466.0,
+      "this_arm_ultimate_g": 37.1,
+      "stiffness_vs_carbon_pct": 104.0
+    },
+    "LC5_standoff_side_impact_50g": {
+      "top_deck_g": 137.0,
+      "stress_MPa": 10.8,
+      "safety_factor": 46.4
+    },
+    "vibration": {
+      "arm_first_bending_Hz": 116.0,
+      "arm_stiffness_N_per_mm": 41.1,
+      "prop_rotation_hover_Hz": 153.0,
+      "prop_rotation_max_Hz": 400.0
+    },
+    "LC6_leg_hard_landing": {
+      "side_force_N": 18.9,
+      "stress_MPa": 3.4,
+      "safety_factor": 26.2
+    },
+    "performance": {
+      "AUW_g": 1281.0,
+      "thrust_to_weight": 6.9,
+      "hover_thrust_per_motor_g": 320.0,
+      "hover_power_W": 165.0,
+      "avionics_W": 14.5,
+      "hover_flight_time_min": 19.3
+    }
+  },
+  "thermal": [
+    {
+      "part": "Motor base -> printed arm pad",
+      "worst_C": 110,
+      "material": "PA6-CF (heat deflection temp.)",
+      "limit_C": 150.0,
+      "margin_C": 40.0
+    },
+    {
+      "part": "Motor base -> arm pad, if printed in PET-CF",
+      "worst_C": 110,
+      "material": "PET-CF (HDT ~ 80 C, not annealed)",
+      "limit_C": 80.0,
+      "margin_C": -30.0
+    },
+    {
+      "part": "ESC stack -> printed clamp plate",
+      "worst_C": 100,
+      "material": "PA6-CF (HDT)",
+      "limit_C": 150.0,
+      "margin_C": 50.0
+    },
+    {
+      "part": "VTX -> printed bottom plate",
+      "worst_C": 95,
+      "material": "PA6-CF (HDT)",
+      "limit_C": 150.0,
+      "margin_C": 55.0
+    },
+    {
+      "part": "Standoffs (stack air)",
+      "worst_C": 90,
+      "material": "Al 7075-T6",
+      "limit_C": 120.0,
+      "margin_C": 30.0
+    },
+    {
+      "part": "Raspberry Pi 5 board (cooler on)",
+      "worst_C": 70,
+      "material": "Nylon 66 standoffs",
+      "limit_C": 85.0,
+      "margin_C": 15.0
+    },
+    {
+      "part": "Landing legs / feet",
+      "worst_C": 60,
+      "material": "PA6-CF (HDT)",
+      "limit_C": 150.0,
+      "margin_C": 90.0
+    },
+    {
+      "part": "Antenna mount",
+      "worst_C": 60,
+      "material": "TPU 95A",
+      "limit_C": 80.0,
+      "margin_C": 20.0
+    }
+  ],
+  "dock_lid_surface_temp_C_at_45C_ambient": {
+    "white/silver lid (alpha=0.25)": 70.0,
+    "grey lid (alpha=0.6)": 105.0,
+    "black lid (alpha=0.9)": 135.0
+  },
+  "materials": {
+    "carbon": {
+      "name": "T700 3K twill carbon/epoxy plate (quasi-isotropic)",
+      "E": 55000.0,
+      "flex_strength": 550.0,
+      "design_allow": 450.0,
+      "rho": 0.00155,
+      "fill": 1.0,
+      "Tg_std": 120.0,
+      "Tg_high": 180.0
+    },
+    "pa_cf": {
+      "name": "PA6-CF (nylon + carbon fibre), 3D printed",
+      "E": 4500.0,
+      "flex_strength": 90.0,
+      "design_allow": 35.0,
+      "rho": 0.0012,
+      "fill": 0.8,
+      "hdt": 150.0
+    },
+    "al7075": {
+      "name": "Aluminium 7075-T6",
+      "E": 71700.0,
+      "yield": 503.0,
+      "max_service_C": 120.0
+    },
+    "tpu": {
+      "name": "TPU 95A",
+      "max_service_C": 80.0
+    },
+    "nylon": {
+      "name": "Nylon 66 standoffs",
+      "max_service_C": 85.0
+    }
+  }
+}

@@ -1,0 +1,83 @@
+Section,Item,Qty,Spec / note
+Drone - electronics,Flight controller Matek H743-SLIM V4,1,ArduPilot
+Drone - electronics,4in1 ESC NewBeeDrone Hummingbird 305 80A AM32,1,bidirectional DShot
+Drone - electronics,Motor iFlight XING2 2809 1250KV,4,M3x10 screws (6 mm printed floor)
+Drone - electronics,Prop 7 inch tri-blade (HQProp 7x4x3 / Gemfan 7040-3),8,4 + spares
+Drone - electronics,Battery GNB 6S 3000 mAh 100C XT60,1,+1 spare
+Drone - electronics,VTX RushFPV Tank Ultimate Mini + 5.8 GHz antenna,1,
+Drone - electronics,FPV camera Caddx Ratel 2,1,
+Drone - electronics,ELRS receiver RadioMaster RP3 V2,1,
+Drone - electronics,GPS + compass Matek M10Q-5883,1,
+Drone - electronics,Raspberry Pi 5 (4 GB) + official active cooler,1,
+Drone - electronics,Raspberry Pi Camera Module 3 + Pi 5 ribbon (200 mm),1,facing down
+Drone - electronics,Matek mR900-30 mLRS (air) + TX kit (ground),1,LoRa 900 MHz MAVLink
+Drone - electronics,BEC 5 V 5 A,1,for the Pi
+Drone - charging,"Ideal-diode bridge module (LT4320 + 4 MOSFETs, >= 5 A)",1,polarity-independent input
+Drone - charging,6S BMS 20 A with cell balancing,1,on the battery balance lead
+Drone - charging,M4 stainless acorn (dome) nut + M4x12 screw,4,foot contacts
+Drone - charging,"Silicone wire 20 AWG red/black, 2 m; 5 A blade fuse + holder",1,
+Drone - hardware,Alu standoff M3 x 30 mm,4,body
+Drone - hardware,Alu standoff M3 x 48 mm,2,rear body
+Drone - hardware,Alu standoff M3 x 6 mm (F-F),4,battery tray
+Drone - hardware,Nylon standoff M2.5 x 10 / M2 x 40,4,Pi / GPS mast (4 each)
+Drone - hardware,M3 x 45 (FC/ESC stack through the arms),4,
+Drone - hardware,M3 x 25 (arm clamp + leg bolts),16,+ M3 nyloc nuts
+Drone - hardware,"M3 x 10 (motors), M3 x 8 (top plate, rear standoffs)",24,16 + 8
+Drone - hardware,"M2 x 6 (VTX, Pi camera, camera plates, GPS)",20,
+Drone - hardware,M2.5 x 6 (Pi),8,
+Drone - hardware,Battery strap 20 mm x 250 mm (rubberised),2,
+Dock - frame,2020 aluminium extrusion 730 mm,4,"top + bottom rings, along X"
+Dock - frame,2020 aluminium extrusion 690 mm,5,rings along Y + deck support
+Dock - frame,2020 aluminium extrusion 260 mm,4,corner posts
+Dock - frame,2020 corner brackets + M5 T-nuts + M5x10,1,set of ~40
+Dock - panels,3 mm ACM (aluminium composite) 736 x 300 mm,4,sides
+Dock - panels,3 mm ACM floor 690 x 690 mm,1,
+Dock - panels,10 mm ACM or HDPE deck 730 x 730 mm,1,white; contact + marker recesses
+Dock - covers,"6 mm twin-wall polycarbonate, opal/white: top 385 x 770, side 770 x 255, ends 385 x 255 (x2)",2,per cover; join with 20x20 alu angle + the printed corner caps
+Dock - covers,20 x 20 x 1.5 aluminium angle,1,4 m
+Dock - covers,8 mm steel shaft 812 mm + 608 bearings + 8 mm shaft collars,2,"4 bearings, 4 collars total"
+Dock - covers,"12 V worm-gear motor >= 7 N*m (70 kg*cm), 5-10 rpm, 8 mm shaft",2,self-locking
+Dock - covers,EPDM D-profile seal strip,1,"5 m, cover edges"
+Dock - centring,MGN12 linear rail 610 mm + MGN12H carriage x2,4,8 carriages total
+Dock - centring,"GT2 6 mm belt, 5.5 m total",1,4 loops of ~1260 mm
+Dock - centring,GT2 20T pulley 5 mm bore,4,drive
+Dock - centring,F625ZZ flanged bearing + M5x30 bolt,8,idlers (2 per post)
+Dock - centring,"NEMA17 stepper 42x40 mm, >= 0.4 N*m",4,
+Dock - centring,15 x 15 x 1.5 aluminium square tube 604 mm,4,pusher bars
+Dock - electronics,ESP32 DevKit (WROOM-32),1,firmware/dock_controller
+Dock - electronics,TMC2209 stepper driver module (UART),4,
+Dock - electronics,DRV8871 motor driver,2,
+Dock - electronics,MCP23017 I/O expander module,1,
+Dock - electronics,INA226 current/voltage module (10 mOhm shunt),1,
+Dock - electronics,DS18B20 waterproof temperature probe,2,
+Dock - electronics,24 V 10 A enclosed PSU,1,
+Dock - electronics,Buck converter 24->12 V 5 A and 24->5 V 3 A,1,one of each
+Dock - electronics,6S CC/CV charger 25.2 V 4 A (24 V input),1,or a CC/CV buck-boost set to 25.20 V
+Dock - electronics,Relay module 10 A (3.3 V logic) + 5 A fuse,1,
+Dock - electronics,Micro limit switch,8,4 pusher home + 4 cover
+Dock - electronics,Copper (or stainless) plate 40 x 40 x 1.5 mm,4,deck contact pads
+Dock - electronics,"IEC inlet with switch + fuse, cable glands, terminal blocks, 18 AWG wire",1,
+Dock - electronics,Emergency-stop button (NC to GND),1,
+Dock - marker,"ArUco DICT_4X4_50 id 0, 130 mm, matte vinyl",1,precision-landing target
+Printed parts,bottom_plate,1,"PA_CF, 160.0 x 84.0 x 4.0 mm, ~44.3 g each"
+Printed parts,arm,4,"PA_CF, 164.0 x 36.0 x 14.0 mm, ~35.6 g each"
+Printed parts,mid_plate,1,"PA_CF, 80.0 x 80.0 x 4.0 mm, ~23.8 g each"
+Printed parts,top_plate,1,"PA_CF, 160.0 x 84.0 x 4.0 mm, ~44.6 g each"
+Printed parts,camera_plate,2,"PA_CF, 22.0 x 56.0 x 3.0 mm, ~3.3 g each"
+Printed parts,battery_tray,1,"PA_CF, 60.0 x 126.0 x 3.0 mm, ~20.8 g each"
+Printed parts,gps_plate,1,"PA_CF, 34.0 x 42.0 x 3.0 mm, ~4.0 g each"
+Printed parts,landing_leg,4,"PA_CF, 30.0 x 14.1 x 49.0 mm, ~5.6 g each"
+Printed parts,foot,4,"PA_CF, 16.0 x 16.0 x 6.0 mm, ~0.8 g each"
+Printed parts,charge_case,1,"PA_CF, 40.0 x 58.0 x 14.0 mm, ~8.1 g each"
+Printed parts,antenna_mount,1,"TPU, 12.0 x 32.0 x 14.0 mm, ~3.6 g each"
+Printed parts,dock_bar_bracket_low_inner,2,"PETG, 45.4 x 50.1 x 21.0 mm, ~11.2 g each - X pusher end, -X bar (inner belt run)"
+Printed parts,dock_bar_bracket_low_outer,2,"PETG, 45.4 x 63.4 x 21.0 mm, ~11.7 g each - X pusher end, +X bar (outer belt run)"
+Printed parts,dock_bar_bracket_high_inner,2,"PETG, 45.4 x 50.1 x 40.0 mm, ~14.7 g each - Y pusher end, -Y bar"
+Printed parts,dock_bar_bracket_high_outer,2,"PETG, 45.4 x 63.4 x 40.0 mm, ~15.2 g each - Y pusher end, +Y bar"
+Printed parts,dock_stepper_bracket,4,"PETG, 46.3 x 46.3 x 22.0 mm, ~12.3 g each - NEMA17 above each drive pulley"
+Printed parts,dock_idler_post,4,"PETG, 24.0 x 22.0 x 24.0 mm, ~5.0 g each - belt idler: 2x F625 flanged bearings on M5"
+Printed parts,dock_hinge_arm,4,"PETG, 49.0 x 83.0 x 10.0 mm, ~27.9 g each - cover to hinge shaft (print 2, and 2 mirrored)"
+Printed parts,dock_bearing_block,4,"PETG, 45.0 x 44.0 x 20.0 mm, ~27.2 g each - 608 pillow block on the body side"
+Printed parts,dock_coupler,2,"PETG, 20.0 x 20.0 x 15.0 mm, ~3.0 g each - worm motor to hinge shaft"
+Printed parts,dock_motor_bracket,2,"PETG, 122.0 x 112.0 x 105.0 mm, ~121.9 g each - worm motor mount (print 1, and 1 mirrored)"
+Printed parts,dock_cover_corner,4,"PETG, 43.0 x 43.0 x 43.0 mm, ~11.8 g each - corner cap of the cover panels (print 2, and 2 mirrored)"

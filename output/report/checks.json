@@ -1,0 +1,981 @@
+{
+  "params": {
+    "wheelbase": 320.0,
+    "prop_d": 177.8,
+    "plate_outline": [
+      [
+        80,
+        -22
+      ],
+      [
+        80,
+        22
+      ],
+      [
+        42,
+        42
+      ],
+      [
+        -42,
+        42
+      ],
+      [
+        -80,
+        22
+      ],
+      [
+        -80,
+        -22
+      ],
+      [
+        -42,
+        -42
+      ],
+      [
+        42,
+        -42
+      ]
+    ],
+    "plate_corner_r": 8.0,
+    "material": "pa_cf",
+    "bottom_t": 4.0,
+    "arm_t": 14.0,
+    "arm_floor": 6.0,
+    "arm_pocket_d": 28.0,
+    "mid_t": 4.0,
+    "top_t": 4.0,
+    "mid_size": 80.0,
+    "mid_r": 8.0,
+    "arm_start": 14.0,
+    "arm_w_root": 18.0,
+    "arm_w_tip": 14.0,
+    "motor_pad_d": 36.0,
+    "arm_bolts": [
+      21.57,
+      32.0,
+      46.0
+    ],
+    "leg_at": 130.0,
+    "leg_bolt_off": 11.0,
+    "leg_len": 49.0,
+    "foot_h": 6.0,
+    "contact_h": 3.0,
+    "standoff_len": 30.0,
+    "standoff_af": 5.0,
+    "rear_standoff": [
+      -66.0,
+      20.0
+    ],
+    "cam_plate_t": 3.0,
+    "cam_plate_y": 10.0,
+    "cam_x": [
+      56.0,
+      78.0
+    ],
+    "cam_tab_x": [
+      61.0,
+      73.0
+    ],
+    "battery": [
+      138.0,
+      44.0,
+      32.0
+    ],
+    "battery_cx": 0.0,
+    "battery_mah": 3000,
+    "tray": [
+      60.0,
+      126.0,
+      3.0
+    ],
+    "tray_cx": 0.0,
+    "tray_gap": 6.0,
+    "tray_standoffs": [
+      [
+        22.63,
+        22.63
+      ],
+      [
+        22.63,
+        -22.63
+      ],
+      [
+        -22.63,
+        22.63
+      ],
+      [
+        -22.63,
+        -22.63
+      ]
+    ],
+    "tray_strap_x": 24.6,
+    "tray_strap_y": [
+      45.0,
+      -45.0
+    ],
+    "motor_d": 35.3,
+    "motor_h": 21.7,
+    "rpi_x": [
+      -36.0,
+      49.0
+    ],
+    "rpi_standoff": 10.0,
+    "gps_mast": 40.0,
+    "gps_plate_t": 3.0,
+    "gps_holes": [
+      [
+        -50,
+        17
+      ],
+      [
+        -50,
+        -17
+      ],
+      [
+        -72,
+        17
+      ],
+      [
+        -72,
+        -17
+      ]
+    ],
+    "charge_case": [
+      -72.0,
+      -32.0,
+      23.0,
+      14.0
+    ],
+    "charge_case_holes": [
+      [
+        -40.0,
+        26.0
+      ],
+      [
+        -40.0,
+        -26.0
+      ],
+      [
+        -64.0,
+        26.0
+      ],
+      [
+        -64.0,
+        -26.0
+      ]
+    ],
+    "bed": [
+      256.0,
+      256.0,
+      256.0
+    ]
+  },
+  "dock_params": {
+    "half": 365.0,
+    "body_h": 300.0,
+    "ext": 20.0,
+    "panel_t": 3.0,
+    "deck_t": 10.0,
+    "rail_c": 318.0,
+    "rail_end": [
+      -300.0,
+      310.0
+    ],
+    "rail_w": 12.0,
+    "rail_h": 8.0,
+    "car_w": 27.0,
+    "car_l": 45.4,
+    "car_h": 13.0,
+    "car_gap": 3.0,
+    "belt_c": 342.0,
+    "pulley_r": 6.37,
+    "pulley_d": 16.0,
+    "belt_z": [
+      9.0,
+      15.0
+    ],
+    "motor_end": 310.0,
+    "idler_end": 300.0,
+    "nema": 42.3,
+    "nema_h": 40.0,
+    "bar": 15.0,
+    "bar_half_len": 302.0,
+    "x_bar_z": 10.0,
+    "y_bar_z": 29.0,
+    "park": 260.0,
+    "cover_reach": 385.0,
+    "cover_h": 255.0,
+    "cover_t": 6.0,
+    "skirt": 15.0,
+    "hinge": [
+      400.0,
+      279.0
+    ],
+    "shaft_d": 8.0,
+    "marker": 130.0,
+    "contact": 40.0,
+    "foot_xy": 91.92
+  },
+  "geometry": {
+    "R_motor_mm": 160.0,
+    "clamp_edge_mm": 53.25,
+    "arm_free_len_mm": 106.75,
+    "arm_w_at_clamp_mm": 16.92,
+    "arm_t_mm": 14.0,
+    "arm_floor_mm": 6.0,
+    "arm_pocket_d_mm": 28.0,
+    "material": "pa_cf",
+    "leg_bolts_mm": [
+      119.0,
+      141.0
+    ],
+    "leg_len_mm": 49.0
+  },
+  "masses": {
+    "bottom_plate": {
+      "material": "pa_cf",
+      "qty": 1,
+      "volume_mm3": 46195.5,
+      "printed": true,
+      "mass_each_g": 44.35,
+      "mass_total_g": 44.35
+    },
+    "arm": {
+      "material": "pa_cf",
+      "qty": 4,
+      "volume_mm3": 37130.3,
+      "printed": true,
+      "mass_each_g": 35.65,
+      "mass_total_g": 142.58
+    },
+    "mid_plate": {
+      "material": "pa_cf",
+      "qty": 1,
+      "volume_mm3": 24770.2,
+      "printed": true,
+      "mass_each_g": 23.78,
+      "mass_total_g": 23.78
+    },
+    "top_plate": {
+      "material": "pa_cf",
+      "qty": 1,
+      "volume_mm3": 46482.0,
+      "printed": true,
+      "mass_each_g": 44.62,
+      "mass_total_g": 44.62
+    },
+    "camera_plate": {
+      "material": "pa_cf",
+      "qty": 2,
+      "volume_mm3": 3398.8,
+      "printed": true,
+      "mass_each_g": 3.26,
+      "mass_total_g": 6.53
+    },
+    "battery_tray": {
+      "material": "pa_cf",
+      "qty": 1,
+      "volume_mm3": 21646.0,
+      "printed": true,
+      "mass_each_g": 20.78,
+      "mass_total_g": 20.78
+    },
+    "gps_plate": {
+      "material": "pa_cf",
+      "qty": 1,
+      "volume_mm3": 4197.2,
+      "printed": true,
+      "mass_each_g": 4.03,
+      "mass_total_g": 4.03
+    },
+    "landing_leg": {
+      "material": "pa_cf",
+      "qty": 4,
+      "volume_mm3": 5840.4,
+      "printed": true,
+      "mass_each_g": 5.61,
+      "mass_total_g": 22.43
+    },
+    "foot": {
+      "material": "pa_cf",
+      "qty": 4,
+      "volume_mm3": 801.9,
+      "printed": true,
+      "mass_each_g": 0.77,
+      "mass_total_g": 3.08
+    },
+    "charge_case": {
+      "material": "pa_cf",
+      "qty": 1,
+      "volume_mm3": 8439.9,
+      "printed": true,
+      "mass_each_g": 8.1,
+      "mass_total_g": 8.1
+    },
+    "antenna_mount": {
+      "material": "tpu",
+      "qty": 1,
+      "volume_mm3": 4298.3,
+      "printed": true,
+      "mass_each_g": 3.64,
+      "mass_total_g": 3.64
+    },
+    "standoff_30mm": {
+      "material": "al7075",
+      "qty": 4,
+      "volume_mm3": 502.3,
+      "printed": false,
+      "mass_each_g": 1.41,
+      "mass_total_g": 5.65
+    },
+    "standoff_rear": {
+      "material": "al7075",
+      "qty": 2,
+      "volume_mm3": 803.6,
+      "printed": false,
+      "mass_each_g": 2.26,
+      "mass_total_g": 4.52
+    },
+    "standoff_tray_6mm": {
+      "material": "al7075",
+      "qty": 4,
+      "volume_mm3": 100.5,
+      "printed": false,
+      "mass_each_g": 0.28,
+      "mass_total_g": 1.13
+    },
+    "standoff_rpi_m2_5x10": {
+      "material": "nylon",
+      "qty": 4,
+      "volume_mm3": 181.9,
+      "printed": false,
+      "mass_each_g": 0.21,
+      "mass_total_g": 0.83
+    },
+    "standoff_gps_m2x40": {
+      "material": "nylon",
+      "qty": 4,
+      "volume_mm3": 473.8,
+      "printed": false,
+      "mass_each_g": 0.54,
+      "mass_total_g": 2.16
+    }
+  },
+  "dock_parts": {
+    "dock_bar_bracket_low_inner": {
+      "material": "petg",
+      "qty": 2,
+      "kind": "print",
+      "mass_each_g": 11.2,
+      "note": "X pusher end, -X bar (inner belt run)"
+    },
+    "dock_bar_bracket_low_outer": {
+      "material": "petg",
+      "qty": 2,
+      "kind": "print",
+      "mass_each_g": 11.7,
+      "note": "X pusher end, +X bar (outer belt run)"
+    },
+    "dock_bar_bracket_high_inner": {
+      "material": "petg",
+      "qty": 2,
+      "kind": "print",
+      "mass_each_g": 14.7,
+      "note": "Y pusher end, -Y bar"
+    },
+    "dock_bar_bracket_high_outer": {
+      "material": "petg",
+      "qty": 2,
+      "kind": "print",
+      "mass_each_g": 15.2,
+      "note": "Y pusher end, +Y bar"
+    },
+    "dock_stepper_bracket": {
+      "material": "petg",
+      "qty": 4,
+      "kind": "print",
+      "mass_each_g": 12.3,
+      "note": "NEMA17 above each drive pulley"
+    },
+    "dock_idler_post": {
+      "material": "petg",
+      "qty": 4,
+      "kind": "print",
+      "mass_each_g": 5.0,
+      "note": "belt idler: 2x F625 flanged bearings on M5"
+    },
+    "dock_hinge_arm": {
+      "material": "petg",
+      "qty": 4,
+      "kind": "print",
+      "mass_each_g": 27.9,
+      "note": "cover to hinge shaft (print 2, and 2 mirrored)"
+    },
+    "dock_bearing_block": {
+      "material": "petg",
+      "qty": 4,
+      "kind": "print",
+      "mass_each_g": 27.2,
+      "note": "608 pillow block on the body side"
+    },
+    "dock_coupler": {
+      "material": "petg",
+      "qty": 2,
+      "kind": "print",
+      "mass_each_g": 3.0,
+      "note": "worm motor to hinge shaft"
+    },
+    "dock_motor_bracket": {
+      "material": "petg",
+      "qty": 2,
+      "kind": "print",
+      "mass_each_g": 121.9,
+      "note": "worm motor mount (print 1, and 1 mirrored)"
+    },
+    "dock_cover_corner": {
+      "material": "petg",
+      "qty": 4,
+      "kind": "print",
+      "mass_each_g": 11.8,
+      "note": "corner cap of the cover panels (print 2, and 2 mirrored)"
+    },
+    "dock_frame": {
+      "material": "al2020",
+      "qty": 1,
+      "kind": "cut",
+      "mass_each_g": 3705.0,
+      "note": "2020 extrusion frame (cut list in the BOM)"
+    },
+    "dock_panels": {
+      "material": "acm",
+      "qty": 1,
+      "kind": "cut",
+      "mass_each_g": 6101.0,
+      "note": "3 mm ACM side panels + floor"
+    },
+    "dock_deck": {
+      "material": "acm",
+      "qty": 1,
+      "kind": "cut",
+      "mass_each_g": 7965.0,
+      "note": "10 mm ACM/HDPE landing deck 730x730 with contact + marker recesses"
+    },
+    "dock_cover": {
+      "material": "pc",
+      "qty": 2,
+      "kind": "cut",
+      "mass_each_g": 890.0,
+      "note": "6 mm twin-wall polycarbonate shell (top, outer side, 2 ends)"
+    },
+    "dock_bar": {
+      "material": "al6063",
+      "qty": 4,
+      "kind": "cut",
+      "mass_each_g": 132.0,
+      "note": "15x15x1.5 aluminium square tube, 604 mm"
+    },
+    "dock_shaft": {
+      "material": "steel",
+      "qty": 2,
+      "kind": "cut",
+      "mass_each_g": 322.0,
+      "note": "8 mm steel hinge shaft, 812 mm"
+    }
+  },
+  "print_list": [
+    {
+      "part": "bottom_plate",
+      "qty": 1,
+      "material": "pa_cf",
+      "size_mm": [
+        160.0,
+        84.0,
+        4.0
+      ],
+      "fits_bed": true,
+      "mass_each_g": 44.3,
+      "note": ""
+    },
+    {
+      "part": "arm",
+      "qty": 4,
+      "material": "pa_cf",
+      "size_mm": [
+        164.0,
+        36.0,
+        14.0
+      ],
+      "fits_bed": true,
+      "mass_each_g": 35.6,
+      "note": ""
+    },
+    {
+      "part": "mid_plate",
+      "qty": 1,
+      "material": "pa_cf",
+      "size_mm": [
+        80.0,
+        80.0,
+        4.0
+      ],
+      "fits_bed": true,
+      "mass_each_g": 23.8,
+      "note": ""
+    },
+    {
+      "part": "top_plate",
+      "qty": 1,
+      "material": "pa_cf",
+      "size_mm": [
+        160.0,
+        84.0,
+        4.0
+      ],
+      "fits_bed": true,
+      "mass_each_g": 44.6,
+      "note": ""
+    },
+    {
+      "part": "camera_plate",
+      "qty": 2,
+      "material": "pa_cf",
+      "size_mm": [
+        22.0,
+        56.0,
+        3.0
+      ],
+      "fits_bed": true,
+      "mass_each_g": 3.3,
+      "note": ""
+    },
+    {
+      "part": "battery_tray",
+      "qty": 1,
+      "material": "pa_cf",
+      "size_mm": [
+        60.0,
+        126.0,
+        3.0
+      ],
+      "fits_bed": true,
+      "mass_each_g": 20.8,
+      "note": ""
+    },
+    {
+      "part": "gps_plate",
+      "qty": 1,
+      "material": "pa_cf",
+      "size_mm": [
+        34.0,
+        42.0,
+        3.0
+      ],
+      "fits_bed": true,
+      "mass_each_g": 4.0,
+      "note": ""
+    },
+    {
+      "part": "landing_leg",
+      "qty": 4,
+      "material": "pa_cf",
+      "size_mm": [
+        30.0,
+        14.1,
+        49.0
+      ],
+      "fits_bed": true,
+      "mass_each_g": 5.6,
+      "note": ""
+    },
+    {
+      "part": "foot",
+      "qty": 4,
+      "material": "pa_cf",
+      "size_mm": [
+        16.0,
+        16.0,
+        6.0
+      ],
+      "fits_bed": true,
+      "mass_each_g": 0.8,
+      "note": ""
+    },
+    {
+      "part": "charge_case",
+      "qty": 1,
+      "material": "pa_cf",
+      "size_mm": [
+        40.0,
+        58.0,
+        14.0
+      ],
+      "fits_bed": true,
+      "mass_each_g": 8.1,
+      "note": ""
+    },
+    {
+      "part": "antenna_mount",
+      "qty": 1,
+      "material": "tpu",
+      "size_mm": [
+        12.0,
+        32.0,
+        14.0
+      ],
+      "fits_bed": true,
+      "mass_each_g": 3.6,
+      "note": ""
+    },
+    {
+      "part": "dock_bar_bracket_low_inner",
+      "qty": 2,
+      "material": "petg",
+      "size_mm": [
+        45.4,
+        50.1,
+        21.0
+      ],
+      "fits_bed": true,
+      "mass_each_g": 11.2,
+      "note": "X pusher end, -X bar (inner belt run)"
+    },
+    {
+      "part": "dock_bar_bracket_low_outer",
+      "qty": 2,
+      "material": "petg",
+      "size_mm": [
+        45.4,
+        63.4,
+        21.0
+      ],
+      "fits_bed": true,
+      "mass_each_g": 11.7,
+      "note": "X pusher end, +X bar (outer belt run)"
+    },
+    {
+      "part": "dock_bar_bracket_high_inner",
+      "qty": 2,
+      "material": "petg",
+      "size_mm": [
+        45.4,
+        50.1,
+        40.0
+      ],
+      "fits_bed": true,
+      "mass_each_g": 14.7,
+      "note": "Y pusher end, -Y bar"
+    },
+    {
+      "part": "dock_bar_bracket_high_outer",
+      "qty": 2,
+      "material": "petg",
+      "size_mm": [
+        45.4,
+        63.4,
+        40.0
+      ],
+      "fits_bed": true,
+      "mass_each_g": 15.2,
+      "note": "Y pusher end, +Y bar"
+    },
+    {
+      "part": "dock_stepper_bracket",
+      "qty": 4,
+      "material": "petg",
+      "size_mm": [
+        46.3,
+        46.3,
+        22.0
+      ],
+      "fits_bed": true,
+      "mass_each_g": 12.3,
+      "note": "NEMA17 above each drive pulley"
+    },
+    {
+      "part": "dock_idler_post",
+      "qty": 4,
+      "material": "petg",
+      "size_mm": [
+        24.0,
+        22.0,
+        24.0
+      ],
+      "fits_bed": true,
+      "mass_each_g": 5.0,
+      "note": "belt idler: 2x F625 flanged bearings on M5"
+    },
+    {
+      "part": "dock_hinge_arm",
+      "qty": 4,
+      "material": "petg",
+      "size_mm": [
+        49.0,
+        83.0,
+        10.0
+      ],
+      "fits_bed": true,
+      "mass_each_g": 27.9,
+      "note": "cover to hinge shaft (print 2, and 2 mirrored)"
+    },
+    {
+      "part": "dock_bearing_block",
+      "qty": 4,
+      "material": "petg",
+      "size_mm": [
+        45.0,
+        44.0,
+        20.0
+      ],
+      "fits_bed": true,
+      "mass_each_g": 27.2,
+      "note": "608 pillow block on the body side"
+    },
+    {
+      "part": "dock_coupler",
+      "qty": 2,
+      "material": "petg",
+      "size_mm": [
+        20.0,
+        20.0,
+        15.0
+      ],
+      "fits_bed": true,
+      "mass_each_g": 3.0,
+      "note": "worm motor to hinge shaft"
+    },
+    {
+      "part": "dock_motor_bracket",
+      "qty": 2,
+      "material": "petg",
+      "size_mm": [
+        122.0,
+        112.0,
+        105.0
+      ],
+      "fits_bed": true,
+      "mass_each_g": 121.9,
+      "note": "worm motor mount (print 1, and 1 mirrored)"
+    },
+    {
+      "part": "dock_cover_corner",
+      "qty": 4,
+      "material": "petg",
+      "size_mm": [
+        43.0,
+        43.0,
+        43.0
+      ],
+      "fits_bed": true,
+      "mass_each_g": 11.8,
+      "note": "corner cap of the cover panels (print 2, and 2 mirrored)"
+    }
+  ],
+  "components": {
+    "battery": {
+      "mass_g": 418,
+      "description": "GNB 6S 3000 mAh 100C LiPo, 138x44x32 mm, XT60 (crosswise under the tray)"
+    },
+    "esc": {
+      "mass_g": 18,
+      "description": "NewBeeDrone Hummingbird 305 80A 3-8S AM32 4in1 ESC, 43x43 mm, 30.5x30.5 (14.5 g bare + cap/leads)"
+    },
+    "fc": {
+      "mass_g": 7,
+      "description": "Matek H743-SLIM V4 flight controller (ArduPilot/INAV), 36x36x5 mm, 30.5x30.5"
+    },
+    "vtx": {
+      "mass_g": 5.4,
+      "description": "RushFPV Tank Ultimate Mini 800 mW analog VTX, 28x28 mm, 20x20 M2"
+    },
+    "elrs_rx": {
+      "mass_g": 4.6,
+      "description": "RadioMaster RP3 V2 ELRS 2.4 GHz diversity receiver, 22x13x4 mm, incl. 2 antennas"
+    },
+    "fpv_cam": {
+      "mass_g": 6,
+      "description": "Caddx Ratel 2 (19 mm micro) analog FPV camera"
+    },
+    "down_cam": {
+      "mass_g": 4,
+      "description": "Raspberry Pi Camera Module 3, 25x24 mm, facing down (precision landing)"
+    },
+    "rpi": {
+      "mass_g": 66,
+      "description": "Raspberry Pi 5 + official active cooler"
+    },
+    "bec": {
+      "mass_g": 6,
+      "description": "5 V 5 A BEC for the Pi (under the Pi)"
+    },
+    "gps": {
+      "mass_g": 8,
+      "description": "Matek M10Q-5883 GPS (u-blox M10) + QMC5883L compass, 20x20x12.4 mm"
+    },
+    "telemetry": {
+      "mass_g": 5.3,
+      "description": "Matek mR900-30 mLRS LoRa MAVLink telemetry, 900 MHz 1 W, ~29x21 mm + heatsink"
+    },
+    "ant_telemetry": {
+      "mass_g": 0,
+      "description": "900 MHz dipole, 8 cm (weight included with the radio)"
+    },
+    "ant_vtx": {
+      "mass_g": 8,
+      "description": "5.8 GHz VTX antenna (down-back)"
+    },
+    "ant_elrs_L": {
+      "mass_g": 0,
+      "description": "ELRS T-antenna (weight included with RP3)"
+    },
+    "ant_elrs_R": {
+      "mass_g": 0,
+      "description": "ELRS T-antenna (weight included with RP3)"
+    },
+    "charge_bridge": {
+      "mass_g": 8,
+      "description": "Ideal-diode bridge (LT4320 + 4 MOSFETs, 5 A) + 5 A fuse, in the printed case"
+    },
+    "bms": {
+      "mass_g": 15,
+      "description": "6S 20 A BMS with cell balancing, on the battery's balance lead (taped under the pack)"
+    },
+    "motors_4x": {
+      "mass_g": 242.8,
+      "description": "iFlight XING2 2809 1250KV, 19x19 M3, 60.7 g each"
+    },
+    "props_4x": {
+      "mass_g": 44,
+      "description": "7 inch tri-blade (e.g. HQProp 7x4x3 / Gemfan 7040-3)"
+    },
+    "contacts_4x": {
+      "mass_g": 12.0,
+      "description": "M4 stainless acorn nuts + M4 screws (foot contacts)"
+    },
+    "wiring_hardware": {
+      "mass_g": 65,
+      "description": "screws, XT60, wires, charging leads, straps, ribbon"
+    }
+  },
+  "checks": {
+    "drone_interference": [],
+    "prop_to_anything_min_clearance": {
+      "distance_mm": 10.6,
+      "between": [
+        "REF_prop_1",
+        "top_plate"
+      ]
+    },
+    "prop_to_prop_min_gap": {
+      "distance_mm": 48.47,
+      "between": [
+        "REF_prop_1",
+        "REF_prop_2"
+      ]
+    },
+    "battery_ground_clearance_mm": 9.0,
+    "gps_to_rpi_mm": {
+      "distance_mm": 20.15,
+      "between": [
+        "REF_gps",
+        "REF_rpi"
+      ]
+    },
+    "compass_to_esc_mm": {
+      "distance_mm": 73.21,
+      "between": [
+        "REF_gps",
+        "REF_esc"
+      ]
+    },
+    "compass_to_battery_mm": {
+      "distance_mm": 111.83,
+      "between": [
+        "REF_gps",
+        "REF_battery"
+      ]
+    },
+    "gps_to_telemetry_antenna_mm": {
+      "distance_mm": 13.0,
+      "between": [
+        "REF_gps",
+        "REF_ant_telemetry"
+      ]
+    },
+    "dock_closed_interference": [],
+    "dock_open_interference": [],
+    "dock_centering_interference": [],
+    "cover_sweep_0_to_180deg_interference": [],
+    "drone_top_to_closed_cover": {
+      "distance_mm": 50.0,
+      "between": [
+        "REF_ant_telemetry",
+        "dockCOVER_L"
+      ]
+    },
+    "props_to_dock_when_open": {
+      "distance_mm": 71.89,
+      "between": [
+        "REF_prop_4",
+        "dock_bar_y-1"
+      ]
+    },
+    "takeoff_column_half_width_mm": 212.0,
+    "takeoff_column_vs_dock_open_mm3": 0,
+    "pusher_to_leg_when_centred": {
+      "distance_mm": 0.3,
+      "between": [
+        "dock_bar_y+1",
+        "landing_leg_1"
+      ]
+    },
+    "pushers_to_drone_body_when_centred": {
+      "distance_mm": 4.35,
+      "between": [
+        "dock_bar_x-1",
+        "REF_ant_elrs_L"
+      ]
+    },
+    "landing_capture_mm": {
+      "aligned_yaw": 154.9,
+      "worst_yaw_45deg": 116.8,
+      "pusher_park_mm": 260.0,
+      "x_pusher_centred_mm": 105.43,
+      "y_pusher_centred_mm": 106.28
+    },
+    "print_bed_fit": {
+      "bed_mm": [
+        256.0,
+        256.0,
+        256.0
+      ],
+      "all_fit": true,
+      "too_big": []
+    },
+    "drone_envelope_mm": {
+      "x": 404.1,
+      "y": 404.1,
+      "z": 184.0
+    },
+    "dock_closed_size_mm": {
+      "x": 986,
+      "y": 960,
+      "z": 553
+    },
+    "dock_open_size_mm": {
+      "x": 1596,
+      "y": 960,
+      "z": 372
+    },
+    "frame_mass_g": 338.2,
+    "printed_frame_mass_g": 323.9,
+    "cg_mm": {
+      "x": -2.3,
+      "y": 0.0,
+      "z": 8.5,
+      "offset_from_centre_mm": 2.3,
+      "below_prop_plane_mm": 34.2
+    },
+    "auw_from_cg_sum_g": 1281.0,
+    "down_camera_view_blocked_by": []
+  }
+}

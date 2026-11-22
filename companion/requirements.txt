@@ -1,0 +1,5 @@
+# on the Raspberry Pi 5 (Raspberry Pi OS Bookworm): sudo apt install python3-picamera2 python3-opencv
+pymavlink>=2.4.41
+requests>=2.31
+numpy>=1.24
+opencv-contrib-python>=4.8   # only if the apt python3-opencv is missing cv2.aruco
