@@ -1,0 +1,21 @@
+{
+  "thrust_per_motor_N": 3.14,
+  "download_on_airframe_N": 1.0,
+  "download_pct_of_thrust": 7.96,
+  "flight_time_loss_pct": 10.8,
+  "side_force_N": [
+    -0.025,
+    -0.018
+  ],
+  "induced_velocity_mps": 6.74,
+  "momentum_theory_induced_velocity_mps": 7.19,
+  "grid": [
+    161,
+    161,
+    201
+  ],
+  "cell_mm": 4.0,
+  "tau0": 0.5008,
+  "seconds": 216,
+  "device": "NVIDIA GeForce MX450"
+}
