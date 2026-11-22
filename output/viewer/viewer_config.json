@@ -1,0 +1,33 @@
+{
+  "units": "mm, CAD axes: X forward, Y left, Z up (the GLB files are already turned to Y-up)",
+  "z_deck": 310.0,
+  "drone_on_deck_z": 364.0,
+  "hinge_x": 400.0,
+  "hinge_z": 279.0,
+  "pusher_park": 260.0,
+  "pusher_x_centred": 105.43111111111111,
+  "pusher_y_centred": 106.27555555555556,
+  "motors_xy": [
+    [
+      113.13708498984761,
+      113.13708498984761
+    ],
+    [
+      -113.1370849898476,
+      113.13708498984761
+    ],
+    [
+      -113.13708498984764,
+      -113.1370849898476
+    ],
+    [
+      113.13708498984758,
+      -113.13708498984764
+    ]
+  ],
+  "prop_z": 41.2,
+  "foot_xy": 91.92,
+  "half": 365.0,
+  "body_h": 300.0,
+  "capture_mm": 154.9
+}
