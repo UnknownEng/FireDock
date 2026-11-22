@@ -1,0 +1,15 @@
+{
+  "arm_fea": {
+    "software": "FreeCAD 1.1.4 FEM workbench, gmsh mesh, CalculiX solver",
+    "mesh_nodes": 56880,
+    "mesh_tetrahedra": 33995,
+    "element_order": 2,
+    "load_N": 25.5,
+    "max_von_mises_MPa_everywhere": 6.75,
+    "max_von_mises_MPa_outside_clamp_band": 4.98,
+    "motor_deflection_mm": 0.6,
+    "safety_factor_vs_35MPa": 7.0,
+    "solve_s": 33.8,
+    "note": "the 'everywhere' maximum includes the artificial spike at the perfectly rigid clamp edge; the outside-band value ignores the first 3 mm, same as analysis/fea.py"
+  }
+}

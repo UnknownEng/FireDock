@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Docker Drone 3D</title>
+<style>
+  :root { --panel: rgba(16, 20, 28, 0.72); --text: #eef2f7; --muted: #a9b3c1; --accent: #ff7a1a; --ok: #3ddc97; }
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #dfe3e8; font-family: "Segoe UI", system-ui, sans-serif; }
+  canvas { display: block; }
+  #hud { position: fixed; left: 16px; top: 16px; max-width: min(420px, calc(100vw - 32px)); color: var(--text);
+         background: var(--panel); backdrop-filter: blur(8px); border-radius: 12px; padding: 14px 16px; }
+  #hud h1 { margin: 0 0 2px; font-size: 18px; letter-spacing: .3px; }
+  #hud .sub { color: var(--muted); font-size: 12px; margin-bottom: 10px; }
+  #cap { font-size: 16px; font-weight: 600; min-height: 44px; line-height: 1.35; }
+  #steps { margin: 8px 0 0; padding: 0; list-style: none; font-size: 12px; max-height: 34vh; overflow: auto; display: none; }
+  #hud.open #steps { display: block; }
+  #toggle { margin-top: 6px; font-size: 12px; padding: 3px 8px; }
+  #steps li { padding: 3px 6px; border-radius: 6px; color: var(--muted); cursor: pointer; }
+  #steps li.on { background: rgba(255,122,26,.22); color: var(--text); }
+  #bar { position: fixed; left: 16px; right: 16px; bottom: 16px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+         background: var(--panel); backdrop-filter: blur(8px); border-radius: 12px; padding: 10px 12px; color: var(--text); }
+  button { background: #2a3342; color: var(--text); border: 1px solid #3c4759; border-radius: 8px; padding: 7px 11px;
+           font-size: 13px; cursor: pointer; }
+  button:hover { border-color: var(--accent); }
+  button.on { background: var(--accent); border-color: var(--accent); color: #111; }
+  #prog { flex: 1 1 200px; height: 8px; background: #2a3342; border-radius: 6px; position: relative; cursor: pointer; min-width: 120px; }
+  #prog > div { position: absolute; left: 0; top: 0; bottom: 0; background: var(--accent); border-radius: 6px; width: 0; }
+  #time { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 12px; min-width: 70px; text-align: right; }
+  #msg { position: fixed; right: 16px; top: 16px; background: var(--panel); color: var(--ok); padding: 8px 12px;
+         border-radius: 10px; font-size: 13px; display: none; }
+  #load { position: fixed; inset: 0; display: grid; place-items: center; color: #334; font-size: 15px; }
+  @media (max-width: 640px) { #steps { display: none; } #hud { padding: 10px 12px; } #cap { font-size: 14px; } }
+</style>
+<script type="importmap">
+{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+               "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/" } }
+</script>
+</head>
+<body>
+<div id="load">Loading the 3D models…</div>
+<div id="hud">
+  <h1>Docker Drone</h1>
+  <div class="sub">3D-printed 7-inch drone + flat-top charging dock · drag to rotate, scroll to zoom</div>
+  <div id="cap"></div>
+  <button id="toggle" onclick="this.parentElement.classList.toggle('open')">All steps ▾</button>
+  <ul id="steps"></ul>
+</div>
+<div id="msg"></div>
+<div id="bar">
+  <button id="play" class="on">❚❚ Pause</button>
+  <button id="restart">⟲ Restart</button>
+  <button id="speed">1×</button>
+  <div id="prog"><div></div></div>
+  <span id="time">0.0 s</span>
+  <button id="cine" class="on">Cinematic camera</button>
+  <button id="xray">See-through covers</button>
+  <button id="studio">Drone only</button>
+  <button id="shot">📷 Save picture</button>
+  <button id="rec">● Record video</button>
+</div>
+<script type="module" src="viewer.js"></script>
+</body>
+</html>
