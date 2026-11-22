@@ -1,0 +1,20 @@
+{
+  "speed_mps": 15.0,
+  "pitch_deg": 25,
+  "drag_N": 3.694,
+  "vertical_force_N": -0.5,
+  "CdA_m2": 0.02681,
+  "frontal_area_m2": 0.02936,
+  "Cd_on_frontal_area": 0.91,
+  "drag_power_W": 55.4,
+  "drag_at_20mps_N": 6.57,
+  "grid": [
+    276,
+    136,
+    126
+  ],
+  "cell_mm": 4.0,
+  "tau0": 0.5008,
+  "seconds": 773,
+  "device": "Intel(R) Iris(R) Xe Graphics"
+}
