@@ -1,0 +1,11 @@
+{
+  "Cd": 1.064,
+  "reference_Cd": 1.05,
+  "reference": "Hoerner, Fluid-Dynamic Drag (cube face-on)",
+  "cells_per_side": 20,
+  "blockage_pct": 4.0,
+  "tau0": 0.5008,
+  "error_pct": 1.4,
+  "seconds": 259,
+  "device": "Intel(R) Iris(R) Xe Graphics"
+}

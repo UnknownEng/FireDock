@@ -1,0 +1,23 @@
+{
+  "drone_feet_above_deck_mm": 300.0,
+  "thrust_total_N": 12.57,
+  "force_on_all_solids_N": [
+    0.07,
+    -0.002,
+    -11.903
+  ],
+  "grid": [
+    250,
+    175,
+    140
+  ],
+  "cell_mm": 8.0,
+  "tau0": 0.5008,
+  "seconds": 179,
+  "device": "NVIDIA GeForce MX450",
+  "downward_force_on_ground_N": -0.076,
+  "downward_force_on_dock_N": 10.961,
+  "downward_force_on_drone_N": 1.018,
+  "drone_download_pct_of_thrust": 8.1,
+  "max_wash_speed_40mm_above_deck_mps": 12.1
+}
