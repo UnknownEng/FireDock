@@ -1,0 +1,42 @@
+=== dock_takeoff on NVIDIA GeForce MX450
+  dock_takeoff grid (250, 175, 140) = 6.1 M cells at 8.0 mm
+C:\Users\ahmed\Desktop\Docker Drone\.venv\Lib\site-packages\pyopencl\__init__.py:583: CompilerWarning: Non-empty compiler output encountered. Set the environment variable PYOPENCL_COMPILER_OUTPUT=1 to see more.
+  lambda: self._prg.build(options_bytes, devices),
+  [dock_takeoff] NVIDIA GeForce MX450 tau0=0.5008 step 0/7000  7 MLUPS
+  [dock_takeoff] NVIDIA GeForce MX450 tau0=0.5008 step 500/7000  232 MLUPS
+  [dock_takeoff] NVIDIA GeForce MX450 tau0=0.5008 step 1000/7000  241 MLUPS
+  [dock_takeoff] NVIDIA GeForce MX450 tau0=0.5008 step 1500/7000  244 MLUPS
+  [dock_takeoff] NVIDIA GeForce MX450 tau0=0.5008 step 2000/7000  246 MLUPS
+  [dock_takeoff] NVIDIA GeForce MX450 tau0=0.5008 step 2500/7000  247 MLUPS
+  [dock_takeoff] NVIDIA GeForce MX450 tau0=0.5008 step 3000/7000  248 MLUPS
+  [dock_takeoff] NVIDIA GeForce MX450 tau0=0.5008 step 3500/7000  249 MLUPS
+  [dock_takeoff] NVIDIA GeForce MX450 tau0=0.5008 step 4000/7000  249 MLUPS
+  [dock_takeoff] NVIDIA GeForce MX450 tau0=0.5008 step 4500/7000  247 MLUPS
+  [dock_takeoff] NVIDIA GeForce MX450 tau0=0.5008 step 5000/7000  244 MLUPS
+  [dock_takeoff] NVIDIA GeForce MX450 tau0=0.5008 step 5500/7000  243 MLUPS
+  [dock_takeoff] NVIDIA GeForce MX450 tau0=0.5008 step 6000/7000  241 MLUPS
+  [dock_takeoff] NVIDIA GeForce MX450 tau0=0.5008 step 6500/7000  240 MLUPS
+  [dock_takeoff] NVIDIA GeForce MX450 tau0=0.5008 step 6999/7000  239 MLUPS
+{
+  "drone_feet_above_deck_mm": 300.0,
+  "thrust_total_N": 12.57,
+  "force_on_all_solids_N": [
+    0.07,
+    -0.002,
+    -11.903
+  ],
+  "grid": [
+    250,
+    175,
+    140
+  ],
+  "cell_mm": 8.0,
+  "tau0": 0.5008,
+  "seconds": 179,
+  "device": "NVIDIA GeForce MX450",
+  "downward_force_on_ground_N": -0.076,
+  "downward_force_on_dock_N": 10.961,
+  "downward_force_on_drone_N": 1.018,
+  "drone_download_pct_of_thrust": 8.1,
+  "max_wash_speed_40mm_above_deck_mps": 12.1
+}

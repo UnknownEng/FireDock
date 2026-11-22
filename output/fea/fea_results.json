@@ -1,0 +1,103 @@
+{
+  "method": "3D linear-elastic FEA, quadratic tetrahedra (gmsh + scikit-fem)",
+  "material": {
+    "E_MPa": 4500.0,
+    "nu": 0.35,
+    "density_kg_m3": 960.0,
+    "allowable_MPa": 35.0
+  },
+  "boundary": "clamped top+bottom up to the clamp-plate edge at 53.25 mm; peaks read beyond 56.25 mm",
+  "mesh": {
+    "h_mm": 3.5,
+    "nodes": 9157,
+    "tets": 37482,
+    "dofs": 185541
+  },
+  "mesh_study": [
+    {
+      "h_mm": 6.0,
+      "dofs": 73644,
+      "LC1_peak_MPa": 5.9,
+      "LC1_tip_mm": 0.6491
+    },
+    {
+      "h_mm": 4.5,
+      "dofs": 113847,
+      "LC1_peak_MPa": 6.6,
+      "LC1_tip_mm": 0.6447
+    },
+    {
+      "h_mm": 3.5,
+      "dofs": 185541,
+      "LC1_peak_MPa": 6.4,
+      "LC1_tip_mm": 0.6535
+    }
+  ],
+  "LC1_full_thrust": {
+    "load_N": 25.5,
+    "peak_von_mises_MPa": 6.4,
+    "peak_location_mm": [
+      57.0,
+      -4.3,
+      1.2
+    ],
+    "nominal_bending_near_clamp_MPa": 4.3,
+    "beam_theory_at_same_place_MPa": 4.1,
+    "motor_deflection_mm": 0.654,
+    "beam_theory_deflection_mm": 0.621,
+    "safety_factor": 5.4,
+    "beam_theory_safety_factor": 7.1
+  },
+  "LC2_motor_torque": {
+    "torque_Nmm": 400.0,
+    "peak_von_mises_MPa": 1.4,
+    "safety_factor": 25.0
+  },
+  "LC3_vertical_crash_one_arm": {
+    "tip_force_to_reach_allowable_N": 138.0,
+    "equivalent_g_whole_drone": 11.0,
+    "beam_theory_g": 14.4
+  },
+  "LC4_side_hit_one_arm": {
+    "tip_force_to_reach_allowable_N": 177.0,
+    "equivalent_g_whole_drone": 14.1,
+    "peak_location_mm": [
+      56.6,
+      -7.0,
+      0.8
+    ],
+    "beam_theory_g": 17.4
+  },
+  "modal": {
+    "arm_plus_motor_mass_g": 107.3,
+    "modes": [
+      {
+        "freq_Hz": 109.0,
+        "shape": "out-of-plane bending (thrust direction)"
+      },
+      {
+        "freq_Hz": 121.0,
+        "shape": "in-plane bending (yaw direction)"
+      },
+      {
+        "freq_Hz": 534.0,
+        "shape": "torsion (arm twisting)"
+      },
+      {
+        "freq_Hz": 889.0,
+        "shape": "out-of-plane bending (thrust direction)"
+      },
+      {
+        "freq_Hz": 1013.0,
+        "shape": "in-plane bending (yaw direction)"
+      },
+      {
+        "freq_Hz": 1484.0,
+        "shape": "axial"
+      }
+    ],
+    "beam_theory_first_bending_Hz": 116.0,
+    "prop_hover_Hz": 153.0,
+    "prop_max_Hz": 400.0
+  }
+}

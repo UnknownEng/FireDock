@@ -1,0 +1,97 @@
+{
+  "cube": {
+    "Cd": 1.064,
+    "reference_Cd": 1.05,
+    "reference": "Hoerner, Fluid-Dynamic Drag (cube face-on)",
+    "cells_per_side": 20,
+    "blockage_pct": 4.0,
+    "tau0": 0.5008,
+    "error_pct": 1.4,
+    "seconds": 259,
+    "device": "Intel(R) Iris(R) Xe Graphics"
+  },
+  "hover": {
+    "thrust_per_motor_N": 3.14,
+    "download_on_airframe_N": 1.0,
+    "download_pct_of_thrust": 7.96,
+    "flight_time_loss_pct": 10.8,
+    "side_force_N": [
+      -0.025,
+      -0.018
+    ],
+    "induced_velocity_mps": 6.74,
+    "momentum_theory_induced_velocity_mps": 7.19,
+    "grid": [
+      161,
+      161,
+      201
+    ],
+    "cell_mm": 4.0,
+    "tau0": 0.5008,
+    "seconds": 216,
+    "device": "NVIDIA GeForce MX450"
+  },
+  "ff0": {
+    "speed_mps": 15.0,
+    "pitch_deg": 0,
+    "drag_N": 3.454,
+    "vertical_force_N": 0.605,
+    "CdA_m2": 0.02506,
+    "frontal_area_m2": 0.01813,
+    "Cd_on_frontal_area": 1.38,
+    "drag_power_W": 51.8,
+    "drag_at_20mps_N": 6.14,
+    "grid": [
+      279,
+      136,
+      111
+    ],
+    "cell_mm": 4.0,
+    "tau0": 0.5008,
+    "seconds": 146,
+    "device": "NVIDIA GeForce MX450"
+  },
+  "ff25": {
+    "speed_mps": 15.0,
+    "pitch_deg": 25,
+    "drag_N": 3.694,
+    "vertical_force_N": -0.5,
+    "CdA_m2": 0.02681,
+    "frontal_area_m2": 0.02936,
+    "Cd_on_frontal_area": 0.91,
+    "drag_power_W": 55.4,
+    "drag_at_20mps_N": 6.57,
+    "grid": [
+      276,
+      136,
+      126
+    ],
+    "cell_mm": 4.0,
+    "tau0": 0.5008,
+    "seconds": 773,
+    "device": "Intel(R) Iris(R) Xe Graphics"
+  },
+  "dock_takeoff": {
+    "drone_feet_above_deck_mm": 300.0,
+    "thrust_total_N": 12.57,
+    "force_on_all_solids_N": [
+      0.07,
+      -0.002,
+      -11.903
+    ],
+    "grid": [
+      250,
+      175,
+      140
+    ],
+    "cell_mm": 8.0,
+    "tau0": 0.5008,
+    "seconds": 179,
+    "device": "NVIDIA GeForce MX450",
+    "downward_force_on_ground_N": -0.076,
+    "downward_force_on_dock_N": 10.961,
+    "downward_force_on_drone_N": 1.018,
+    "drone_download_pct_of_thrust": 8.1,
+    "max_wash_speed_40mm_above_deck_mps": 12.1
+  }
+}
